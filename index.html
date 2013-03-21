@@ -1,12 +1,20 @@
 <html>
   <h1>MATE Slackbuilds</h1>
 
-<p>These SlackBuilds are intended to provide an easy way for a user to build
-the <a href="http://www.mate-desktop.org">MATE Desktop Environment</a> on
-Slackware.  The scripts will be hosted in a <a
+<p>These SlackBuilds are intended to provide a means for a user to build the
+<a href="http://www.mate-desktop.org">MATE Desktop Environment</a> on <a
+  href="http://www.slackware.com">Slackware</a>.  Some of the goals of this
+project are: (1) do not replace any stock Slackware packages unless absolutely
+necessary (thus far, no packages need to be replaced), (2) keep the upstream
+default theme and settings, (3) try to minimize outside dependencies as much
+as possible, and (4) make it easy to build and install by using standard-style
+SlackBuild scripts and slack-desc and doinst.sh files that we have become
+familiar with by using the <a
+  href="http://www.slackbuilds.org">SlackBuilds</a> repository.</p>
+<p>The scripts will be hosted in a <a
   href="https://github.com/mateslackbuilds/msb">Git repo</a> shortly.  In the
 meantime, here are some obligatory screenshots of MATE 1.5 (the development
-branch of what will soon be MATE 1.6) running on Slackware64-14.0:</p>
+branch of what will soon be MATE 1.6) with its default theme and background running on Slackware64-14.0:</p>
 <a href="./images/mateslack1.png"><img src="./images/mateslack1-thumb.png"/></a>
 <br />
 <a href="./images/mateslack2.png"><img src="./images/mateslack2-thumb.png"/></a>
@@ -14,4 +22,18 @@ branch of what will soon be MATE 1.6) running on Slackware64-14.0:</p>
 <a href="./images/mateslack3.png"><img src="./images/mateslack3-thumb.png"/></a>
 <br />
 <a href="./images/mateslack4.png"><img src="./images/mateslack4-thumb.png"/></a>
+<br />
+<p>FAQ:</p>
+<ul>
+  <li>Q: When will the scripts be made available? A: Soon!</li>
+  <li>Q: Will there be binary packages? A: It will depend on demand. It is
+  very easy to build the base desktop environment in about 30 minutes on any
+  relatively decent machine.  The extra packages might take an additional 20
+  minutes.  The biggest issue with providing binary packages is the hosting
+  space and bandwidth for the packages and sources.</li>
+  <li>Q: Do the scripts build and run on -current? A: Based on limited
+  testing, yes.  These scripts are developed on a Slackware64-14.0 machine but
+  should work ok on x86 (32 bit) systems as well as those running -current.
+  But let me (@chessgriffin) otherwise.</li>
+</ul>
 </html>
