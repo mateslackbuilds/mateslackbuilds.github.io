@@ -1,0 +1,60 @@
+/*
+      Created by Keith Donegan of Code-Sucks.com
+
+	  E-Mail: Keithdonegan@gmail.com
+
+	  You can do whatever you want with these layouts,
+	  but it would be greatly appreciated if you gave a link
+	  back to http://www.code-sucks.com
+
+      Modified by Chess Griffin <chess.griffin@gmail.com>
+
+*/
+
+* { padding: 0; margin: 0; }
+
+body {
+ font-family: 'Play', sans-serif;
+ /*font-family: sans-serif;*/
+ font-size: 16px;
+}
+a:link {
+  color: #638468;
+}
+a:visited, a:hover {
+  color: #2a5022;
+}
+#wrapper {
+ margin: 0 auto;
+ width: 922px;
+}
+#content {
+ width: 900px;
+ color: #333;
+ border: 1px solid #ccc;
+ background: #f2f2e6;
+ margin: 10px 0px 10px 0px;
+ padding: 10px;
+ height: 700px;
+}
+p {
+  margin: 5px 5px 10px 5px;
+}
+ol,ul {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+li {
+  margin-bottom:3px;
+}
+#screenshots {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image {
+}
+#footer {
+  font-size: 12px;
+  text-align: center;
+}

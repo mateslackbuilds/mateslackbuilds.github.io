@@ -1,41 +1,87 @@
-<html>
-  <h1>MATE SlackBuilds</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>MATE SlackBuilds</title>
+<link rel="stylesheet" type="text/css" href="main.css" />
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet'
+type='text/css'>
+</head>
 
-<p>These SlackBuilds are intended to provide a means for a user to build the
-<a href="http://www.mate-desktop.org">MATE Desktop Environment</a> on <a
-  href="http://www.slackware.com">Slackware</a>.  Some of the goals of this
-project are: (1) do not replace any stock Slackware packages unless absolutely
-necessary (thus far, no packages need to be replaced), (2) keep the upstream
-default theme and settings, (3) try to minimize outside dependencies as much
-as possible, and (4) make it easy to build and install by using standard-style
-SlackBuild scripts and slack-desc and doinst.sh files that we have become
-familiar with by using the <a
-  href="http://www.slackbuilds.org">SlackBuilds</a> repository.</p>
-<p>The scripts are hosted in a <a
-  href="https://github.com/mateslackbuilds/msb">Git repo</a> so feel free to
-test and offer suggestions, improvements, patches etc.  Here are some
-obligatory screenshots of MATE 1.5 (the development branch of what will soon
-be MATE 1.6) with its default theme and background running on
-Slackware64-14.0:</p>
-<a href="./images/mateslack1.png"><img src="./images/mateslack1-thumb.png"/></a>
-<br />
-<a href="./images/mateslack2.png"><img src="./images/mateslack2-thumb.png"/></a>
-<br />
-<a href="./images/mateslack3.png"><img src="./images/mateslack3-thumb.png"/></a>
-<br />
-<a href="./images/mateslack4.png"><img src="./images/mateslack4-thumb.png"/></a>
-<p>FAQ:</p>
-<ul>
-  <li>Q: Will there be binary packages? A: It will depend on demand. It might
-  not be necessary because it is very easy to build the base desktop
-  environment in about 30 minutes on any relatively decent machine.  The extra
-  packages might take an additional 20 minutes.  The biggest issue with
-  providing binary packages is the hosting space and bandwidth for the
-  packages and sources.</li>
-  <li>Q: Do the scripts build and run on -current? A: Based on limited
-  testing, yes.  These scripts are developed on a Slackware64-14.0 machine but
-  should work ok on x86 (32 bit) systems as well as those running
-  -current.</li>
-</ul>
-<p>Thanks and contact me at chess[dot]griffin[at]gmail[dot]com if you would like to help.</p>
+<body>
+
+   <!-- Begin Wrapper -->
+   <div id="wrapper">
+     <h2>MATE SlackBuilds</h2>
+         <!-- Begin Content -->
+         <div id="content">
+           <p>These SlackBuilds are intended to provide a means for a user to
+           build the <a href="http://www.mate-desktop.org">MATE Desktop
+             Environment</a> on <a
+             href="http://www.slackware.com">Slackware Linux</a>.  Some of the goals
+           of the project are:</p>
+           <ol>
+             <li>Do not replace any stock Slackware packages unless
+             absolutely necessary (thus far, no packages need to be replaced);</li>
+             <li>Keep the upstream default theme and settings;</li>
+             <li>Try and minimize outside dependencies as much as possible;
+             and</li>
+             <li>Make it easy to build and install by using standard style
+             SlackBuild scripts and slack-desc and doinst.sh files that most
+             Slackware users have become familiar with by using the <a
+               href="http://www.slackbuilds.org">SlackBuilds</a> repository.</li></ol>
+           <p>The scripts are hosted in a <a
+             href="http://github.com/mateslackbuilds/msb">Git repo</a> so feel
+           free to test and offer suggestions, improvements, patches, etc.
+           Here are some obligatory screenshots of MATE 1.5 (the development
+           branch of what will soon be MATE 1.6) with its default theme and
+           background running on Slackware64-14.0:</p>
+           <div id="screenshots">
+             <a href="images/mate1.png"><img class="image"
+               src="images/mate1-thumb.png" /></a>
+             <a href="images/mate2.png"><img class="image"
+               src="images/mate2-thumb.png" /></a>
+             <a href="images/mate3.png"><img class="image"
+               src="images/mate3-thumb.png" /></a>
+             <a href="images/mate4.png"><img class="image"
+               src="images/mate4-thumb.png" /></a>
+           </div>
+           <p>FAQ:</p>
+           <ul>
+             <li>Q: Will there be binary packages?</li><li>A: It will depend
+             on demand. It might not be necessary because it is very easy to
+             build the base desktop environment in about 30 minutes on any
+             relatively decent machine. The extra packages might take an
+             additional 20 minutes.  The biggest issue with providing binary
+             packages is the hosting space and bandwidth.  But we will make an
+             announcement (probably on the Slackware forums on
+             LinuxQuestions.org) if packages become available.</li>
+           <li>Q: Do the scripts build and run on -current?</li><li>A: Based
+           on our testing, yes. These scripts are developed on Slackware64-14.0 and
+           Slackware64-current machines and should also work ok on x86 (32 bit)
+           systems.  Please be sure to read the README.TXT, KNOWN_ISSUES.TXT,
+           and CURRENT.TXT documents as these are updated to note any
+           potential problems or issues.</li>
+           <li>Q:  I'm getting weird issues with the panel, menu, icons, or
+           other such things.  What's up?</li>
+           <li>A: Again, check the KNOWN_ISSUES.TXT and other docs.  Usually,
+           these kinds of issues occur when there are conflicts with other
+           desktop environments.  Backing up and moving certain directories
+           in the user's $HOME (such as $HOME/.cache, $HOME/.config, and
+           $HOME/.local) usually solves theses issues.</li>
+           <li>Q: Who is behind MATE SlackBuilds?</li>
+           <li>A: Willy Sudiarto Raharjo and Chess Griffin.  Feel free to post
+           a bug report at the Github repo or send us an email -- just check
+           the commit logs to find our email addresses.  :-)</li>
+         </ul>
+	</div>
+		 <!-- End Content -->
+                 <div id="footer">Not affiliated with or endorsed by Slackware
+                 Linux, Patrick J. Volkerding, or the SlackBuilds.org project.
+               Slackware is a registered trademark of Patrick J. Volkerding
+               and Linux is a registered trademark of Linus Torvalds.  Use at
+             your own risk, YMMV, and all that.</div>
+   </div>
+   <!-- End Wrapper -->
+</body>
 </html>
