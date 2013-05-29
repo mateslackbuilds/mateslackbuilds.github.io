@@ -16,7 +16,7 @@ type='text/css'>
          <!-- Begin Content -->
          <div id="content">
            <p>These SlackBuilds are intended to provide a means for a user to
-           build the <a href="http://www.mate-desktop.org">MATE Desktop
+           build and install the <a href="http://www.mate-desktop.org">MATE Desktop
              Environment</a> on <a
              href="http://www.slackware.com">Slackware Linux</a>.  Some of the goals
            of the project are:</p>
@@ -47,28 +47,32 @@ type='text/css'>
            </div>
            <p>FAQ:</p>
            <ul>
-             <li>Q: Are there binary packages?</li><li>A: There are 
+             <li>Q: Are there binary packages?</li><li>A: Yes, there are 
              packages for Slackware 14.0 x86 and x86_64 available at:
              <a
                href="http://slackware.org.uk/msb">http://slackware.org.uk/msb</a>.  It is still advisable to
              clone the git repo and build the packages yourself but these
              packages are available for your convenience.</li>
-           <li>Q: Do the scripts build and run on -current?</li><li>A: Based
-           on our testing, yes. These scripts are developed on Slackware64-14.0 and
-           Slackware64-current machines and should also work ok on x86 (32 bit)
-           systems.  Please be sure to read the README.TXT, KNOWN_ISSUES.TXT,
-           and CURRENT.TXT documents as these are updated to note any
-           potential problems or issues.</li>
-           <li>Q:  I'm getting weird issues with the panel, menu, icons, or
+           <li>Q: Do the scripts build and run on -current?</li><li>A: Yes,
+           based on our testing. These scripts are developed on
+           Slackware64-14.0 and Slackware64-current machines but should also
+           work fine on x86 (32 bit) systems.  Please be sure to read the
+           README.TXT, KNOWN_ISSUES.TXT, and CURRENT.TXT documents as these
+           are updated to note any potential problems or issues.</li>
+           <li>Q: I'm getting weird issues with the panel, menu, icons, or
            other such things.  What's up?</li>
-           <li>A: Again, check the KNOWN_ISSUES.TXT and other docs.  Usually,
-           these kinds of issues occur when there are conflicts with other
-           desktop environments.  Backing up and moving certain directories
-           in the user's $HOME (such as $HOME/.cache, $HOME/.config, and
-           $HOME/.local) usually solves these issues.</li>
+           <li>A: This is rare, but if it happens, check the KNOWN_ISSUES.TXT
+           and other docs.  Usually, these kinds of issues occur when there
+           are conflicts with other desktop environments.  Backing up and
+           moving certain directories in the user's $HOME (such as
+           $HOME/.cache, $HOME/.config, and $HOME/.local) usually solves these
+           issues.</li>
+           <li>Q: How long does it take to build the packages?</li>
+           <li>A: All the /base and /extra packages should build in 30-40
+           minutes on any reasonably modern machine.</li>
            <li>Q: Who is behind MATE SlackBuilds?</li>
-           <li>A: Willy Sudiarto Raharjo and Chess Griffin.  Feel free to post
-           a bug report at the Github repo or send us an email at
+           <li>A: Willy Sudiarto Raharjo and Chess Griffin.  Please post
+           bug reports at the Github repo or send us an email at
            mateslackbuilds@gmail.com</li>
          </ul>
 	</div>
